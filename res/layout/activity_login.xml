@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/equality"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Be Equal!"
+        android:textColor="#FCFDFD"
+        android:textSize="30pt"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@id/subtitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ser Igual"
+        android:textColor="#FCFDFD"
+        android:textSize="14pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:backgroundTint="#FCFDFD"
+        android:background="#FCFDFD"
+        android:layout_marginVertical="16dp"
+        android:hint="Utilizador"
+        android:drawableLeft="@drawable/icon_user"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/password" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:backgroundTint="#FCFDFD"
+        android:background="#FCFDFD"
+        android:layout_marginVertical="16dp"
+        android:hint="Palavra-Passe"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/icon_key"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Login" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="90dp"
+        android:background="@drawable/round_button"
+        android:onClick="onLogin"
+        android:text="Login"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
